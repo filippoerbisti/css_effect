@@ -1,3 +1,3 @@
 # Animated Popup Box
 
-View [DEMO](https://codepen.io/filippoerbisti/pen/jOZmdLG).
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/jOZmdLG) on Codepen.

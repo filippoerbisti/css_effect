@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Isometric Menu</title>
+    <title>CSS Animated Popup Box</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul>
-        <li style="--i:6;"><a href="#">Home</a></li>
-        <li style="--i:5;"><a href="#">About</a></li>
-        <li style="--i:4;"><a href="#">Services</a></li>
-        <li style="--i:3;"><a href="#">Portfolio</a></li>
-        <li style="--i:2;"><a href="#">Our Team</a></li>
-        <li style="--i:1;"><a href="#">Contact</a></li>
-    </ul>
-    
+    <div class="container">
+        <div class="content">
+            <h2>Heading...</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Sed ut nostrum officia quidem, dolores officiis earum. 
+                Cumque labore distinctio, soluta et recusandae nisi optio saepe mollitia dolor aspernatur! 
+                Eius, voluptate.
+            </p>
+        </div>
+        <div class="toggleBtn"></div>
+    </div>
+
+    <script>
+        let container = document.querySelector('.container');
+        let toggleBtn = document.querySelector('.toggleBtn');
+
+        toggleBtn.onclick = function() {
+            container.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

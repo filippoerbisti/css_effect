@@ -1,3 +1,3 @@
-# 3D Flip Checkbox Animation Effects
+# Animated Eyes Follow Mouse Cursor
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/MWQoJaZ) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/poawPqL) on Codepen.

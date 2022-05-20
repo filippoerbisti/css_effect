@@ -1,3 +1,3 @@
-# Background Parallax Effect on Mouse Cursor
+# 3D Isometric Social Media Icon Hover
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/jOZwwxX) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.

@@ -61,6 +61,10 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/qBxjamV) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/NWygbPr) on Codepen.
 
+# Video Inside Text Animation Effects
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/ZEryXZM) on Codepen.
+
 # [Animated Popup Box](https://github.com/filippoerbisti/css_effect/tree/animated-popup-box)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/jOZmdLG) on Codepen.

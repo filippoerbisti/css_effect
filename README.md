@@ -1,3 +1,3 @@
-# 3D Isometric Social Media Icon Hover
+# Endless Road Animation Effects
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/wvyerJW) on Codepen.

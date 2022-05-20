@@ -76,3 +76,7 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/jOZmdLG) on Codepen.
 # [Background Parallax Effect on Mouse Cursor](https://github.com/filippoerbisti/css_effect/tree/background-parallax-effect)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/jOZwwxX) on Codepen.
+
+# Wooden Text Typography Effects
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEwowL) on Codepen.

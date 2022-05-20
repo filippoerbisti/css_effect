@@ -1,3 +1,3 @@
-# Glowing Text Animation Effects
+# £D Wavy Circle Loader Animation Effects
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/NWygbPr) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/MWQobzB) on Codepen.

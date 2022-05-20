@@ -1,5 +1,3 @@
-# Some cool CSS effects
+# Neon Light Button Animation on Hover
 
-Check my branches and have fun!
-
-View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/RwQgRej) on Codepen.

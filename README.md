@@ -1,3 +1,3 @@
-# Glowing Gradient Loader Ring Animation Effects
+# Water Wave Text Animation Effects
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/qBxjamV) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/BaYZLGB) on Codepen.

@@ -1,3 +1,3 @@
-# CSS Rainy Cloud Animation
+# Animated Popup Box
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/OJQgNYm) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/jOZmdLG) on Codepen.

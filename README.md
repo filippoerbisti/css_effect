@@ -1,3 +1,3 @@
-# Video Inside Text Animation Effects
+# Glowing Tubelight Text Animation Effects
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/ZEryXZM) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/JjpJOGj) on Codepen.

@@ -4,56 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Parallax Effect on Mouse Cursor</title>
+    <title>3D Isometric Social Media Icon Hover</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <script src="https://kit.fontawesome.com/60aa6b5946.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/1_jqk3u5.png" 
-        data-speed="-5" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/2_ioeclf.png"
-         data-speed="5" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052963/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/3_nvr1th.png"
-         data-speed="2" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/4_anme3g.png"
-         data-speed="6" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/5_ue0nac.png"
-         data-speed="8" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/6_agrsww.png"
-         data-speed="-2" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/7_ee2s7q.png"
-         data-speed="4" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/8_g2howo.png"
-         data-speed="-9" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/9_qjza4n.png"
-         data-speed="6" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/10_bbstin.png"
-         data-speed="-5" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/11_r8mzzi.png"
-         data-speed="-7" class="layer" alt="">
-        <img src="https://res.cloudinary.com/dl38nyo08/image/upload/v1653052962/Background%20Parallax%20Effect%20on%20Mouse%20Cursor%20%28Codepen%29/12_xrhzro.png"
-         data-speed="5" class="layer" alt="">
-        <h2 data-speed="2" class="layer">Parallax</h2>
-    </section>
-
-    <script>
-        document.body.addEventListener("mousemove", parallax);
-
-        function parallax() {
-            const parllx = document.querySelectorAll(".layer");
-
-            parllx.forEach(function (parllx) {
-                const speed = parllx.getAttribute('data-speed');
-                const x = (window.innerWidth - event.pageX*speed) / 100;
-                const y = (window.innerHeight - event.pageY*speed) / 100;
-
-                parllx.style.transform = "translateX("+x+"px) translateY("+y+"px)";
-                console.log(parllx.style.transform);
-            });
-        }
-    </script>
-    
+    <ul>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-facebook"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-twitter"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-whatsapp"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-linkedin"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-instagram"></span>
+            </a>
+        </li>
+    </ul>
 </body>
 </html>

@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Eyes Follow Mouse Cursor</title>
+    <title>Background Parallax Effect on Mouse Cursor</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </head>
 <body>
-    <div class="box">
-        <div class="eye"></div>
-        <div class="eye"></div>
-    </div>
+    <section>
+        <img src="img/1.png" data-speed="-5" class="layer" alt="">
+        <img src="img/2.png" data-speed="5" class="layer" alt="">
+        <img src="img/3.png" data-speed="2" class="layer" alt="">
+        <img src="img/4.png" data-speed="6" class="layer" alt="">
+        <img src="img/5.png" data-speed="8" class="layer" alt="">
+        <img src="img/6.png" data-speed="-2" class="layer" alt="">
+        <img src="img/7.png" data-speed="4" class="layer" alt="">
+        <img src="img/8.png" data-speed="-9" class="layer" alt="">
+        <img src="img/9.png" data-speed="6" class="layer" alt="">
+        <img src="img/10.png" data-speed="-5" class="layer" alt="">
+        <img src="img/11.png" data-speed="-7" class="layer" alt="">
+        <img src="img/12.png" data-speed="5" class="layer" alt="">
+        <h2 data-speed="2" class="layer">Parallax</h2>
+    </section>
 
     <script>
-        document.body.addEventListener('mousemove', eyeball);
+        document.body.addEventListener("mousemove", parallax);
 
-        function eyeball() {
-            const eye = document.querySelectorAll('.eye');
-            eye.forEach(function (eye) {
-                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-                let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+        function parallax() {
+            const parllx = document.querySelectorAll(".layer");
 
-                let radian = Math.atan2(event.pageX - x, event.pageY - y);
-                let rotation = (radian * (180 / Math.PI) * -1) + 270;
-                let rot = rotation.toFixed(2);
-                eye.style.transform = "rotate("+rot+"deg)";
+            parllx.forEach(function (parllx) {
+                const speed = parllx.getAttribute('data-speed');
+                const x = (window.innerWidth - event.pageX*speed) / 100;
+                const y = (window.innerHeight - event.pageY*speed) / 100;
+
+                parllx.style.transform = "translateX("+x+"px) translateY("+y+"px)";
+                console.log(parllx.style.transform);
             });
         }
     </script>
+    
 </body>
 </html>

@@ -21,13 +21,17 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/BaYRMrW) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.
 
+# [Water Wave Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/water-wave-text-animation)
+
+View [DEMO](https://codepen.io/filippoerbisti/pen/BaYZLGB) on Codepen.
+
 # [Rainy Cloud Animation](https://github.com/filippoerbisti/css_effect/tree/rainy-cloud-animation)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/OJQgNYm) on Codepen.
 
-# [Water Wave Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/water-wave-text-animation)
+# Endless Road Animation Effects
 
-View [DEMO](https://codepen.io/filippoerbisti/pen/BaYZLGB) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/wvyerJW) on Codepen.
 
 # [Ambient Light Effects](https://github.com/filippoerbisti/css_effect/tree/ambient-light-effect)
 

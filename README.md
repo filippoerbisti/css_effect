@@ -1,3 +1,3 @@
-# 3D Wavy Circle Loader Animation Effects
+# 3D Flip Checkbox Animation Effects
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/MWQobzB) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/MWQoJaZ) on Codepen.

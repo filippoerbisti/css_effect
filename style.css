@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bad Script', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,35 +11,68 @@ body {
     background: #000;
 }
 
-.content {
-    position: relative;
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 16em;
 }
 
-.content h2 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    font-size: 8em;
+h1 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
 }
 
-.content h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 2px #03a9f4;
+h1 span:nth-child(1) {
+    animation-delay: 0s;
 }
 
-.content h2:nth-child(2) {
-    color: #03a9f4;
-    animation: animate 4s ease-in-out infinite;
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1.50s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 1.75s;
 }
 
 @keyframes animate {
     0%, 100% {
-        clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
-        54% 60%, 70% 61%, 84% 59%, 100% 52%,
-        100% 100%, 0% 100%);
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
     }
-    50% {
-        clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
-        51% 62%, 67% 50%, 84% 45%, 100% 46%,
-        100% 100%, 0% 100%);
+    5%, 95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
     }
 }

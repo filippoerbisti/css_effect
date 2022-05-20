@@ -61,6 +61,10 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/qBxjamV) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/NWygbPr) on Codepen.
 
+# Glowing Tubelight Text Animation Effects
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/JjpJOGj) on Codepen.
+
 # Video Inside Text Animation Effects
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/ZEryXZM) on Codepen.

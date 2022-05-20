@@ -49,6 +49,10 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/ExQXgKZ) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/MWQobzB) on Codepen.
 
+# Snake Cube Loader Animation Effects
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/MWQoEXV) on Codepen.
+
 # [Glowing Gradient Loader Ring Animation Effects](https://github.com/filippoerbisti/css_effect/tree/glowing-gradient-loader-ring)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/qBxjamV) on Codepen.

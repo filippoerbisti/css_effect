@@ -1,4 +1,4 @@
-# Some cool CSS effects
+# Some cool CSS Animated Effects
 
 Check my branches and have fun!
 

@@ -9,14 +9,6 @@ View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/MWQoJaZ) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects](https://github.com/filippoerbisti/css_effect/tree/3d-wavy-circle-loader)
-
-View [DEMO](https://codepen.io/filippoerbisti/pen/MWQobzB) on Codepen.
-
-# [Ambient Light Effects](https://github.com/filippoerbisti/css_effect/tree/ambient-light-effect)
-
-View [DEMO](https://codepen.io/filippoerbisti/pen/XWZgKpv) on Codepen.
-
 # [Animated Eyes Follow Mouse Cursor](https://github.com/filippoerbisti/css_effect/tree/animated-eyes-follow-mouse-cursor)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/poawPqL) on Codepen.
@@ -37,6 +29,10 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/OJQgNYm) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/BaYZLGB) on Codepen.
 
+# [Ambient Light Effects](https://github.com/filippoerbisti/css_effect/tree/ambient-light-effect)
+
+View [DEMO](https://codepen.io/filippoerbisti/pen/XWZgKpv) on Codepen.
+
 # [Neon Light Button Animation on Hover](https://github.com/filippoerbisti/css_effect/tree/neon-light-button-animation-hover)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/RwQgRej) on Codepen.
@@ -44,6 +40,10 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/RwQgRej) on Codepen.
 # [Neon Light Button Animation Effects](https://github.com/filippoerbisti/css_effect/tree/neon-light-button-animation-infinite)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/ExQXgKZ) on Codepen.
+
+# [3D Wavy Circle Loader Animation Effects](https://github.com/filippoerbisti/css_effect/tree/3d-wavy-circle-loader)
+
+View [DEMO](https://codepen.io/filippoerbisti/pen/MWQobzB) on Codepen.
 
 # [Glowing Gradient Loader Ring Animation Effects](https://github.com/filippoerbisti/css_effect/tree/glowing-gradient-loader-ring)
 

@@ -17,50 +17,46 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/MWQobzB) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/XWZgKpv) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Animated Eyes Follow Mouse Cursor](https://github.com/filippoerbisti/css_effect/tree/animated-eyes-follow-mouse-cursor)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/poawPqL) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Isometric Menu Hover Effect](https://github.com/filippoerbisti/css_effect/tree/isometric-menu-hover-effect)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/BaYRMrW) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [3D Isometric Social Media Icon Hover](https://github.com/filippoerbisti/css_effect/tree/isometric-social-icon-hover)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Rainy Cloud Animation](https://github.com/filippoerbisti/css_effect/tree/rainy-cloud-animation)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/OJQgNYm) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Water Wave Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/water-wave-text-animation)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/BaYZLGB) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Neon Light Button Animation on Hover](https://github.com/filippoerbisti/css_effect/tree/neon-light-button-animation-hover)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/RwQgRej) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Neon Light Button Animation Effects](https://github.com/filippoerbisti/css_effect/tree/neon-light-button-animation-infinite)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/ExQXgKZ) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Glowing Gradient Loader Ring Animation Effects](https://github.com/filippoerbisti/css_effect/tree/glowing-gradient-loader-ring)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/qBxjamV) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Glowing Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/glowing-text-animation)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/NWygbPr) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Animated Popup Box](https://github.com/filippoerbisti/css_effect/tree/animated-popup-box)
 
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/jOZmdLG) on Codepen.
 
-# [3D Wavy Circle Loader Animation Effects]()
+# [Background Parallax Effect on Mouse Cursor](https://github.com/filippoerbisti/css_effect/tree/background-parallax-effect)
 
-View [DEMO]() on Codepen.
-
-# [3D Wavy Circle Loader Animation Effects]()
-
-View [DEMO]() on Codepen.
+View [DEMO](https://codepen.io/filippoerbisti/pen/jOZwwxX) on Codepen.

@@ -1,3 +1,3 @@
-# Hex Circle Follow on Mouse
+# Hangman CSS Animation
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/gOvxdZZ) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQvGqN) on Codepen.

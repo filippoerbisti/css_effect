@@ -21,9 +21,13 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQvGqN) on Codepen.
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEeaGQ) on Codepen.
 
-# Swing Figure CSS Animation
+# [Swing Figure CSS Animation](https://github.com/filippoerbisti/css_effect/tree/swing-figure-css)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/dydzgKr) on Codepen.
+
+# [Welcome Text CSS Animation](https://github.com/filippoerbisti/css_effect/tree/welcome-text-animation)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/zYRdmMa) on Codepen.
 
 
 

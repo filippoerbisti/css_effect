@@ -29,6 +29,14 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/dydzgKr) on Codepen.
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/zYRdmMa) on Codepen.
 
+# [Expanding Flex Cards CSS](https://github.com/filippoerbisti/css_effect/tree/expanding-flex-card)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/wvyqYZz) on Codepen.
+
+# [Dark Mode CSS](https://github.com/filippoerbisti/css_effect/tree/dark-mode-css)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/qBxXQZz) on Codepen.
+
 
 
 # [3D Flip Checkbox Animation Effects](https://github.com/filippoerbisti/css_effect/tree/3d-flip-checkbox)

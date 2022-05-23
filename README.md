@@ -1,3 +1,3 @@
-# Animated Tab Bar Effects
+# Hex Circle Follow on Mouse
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/qBxXMqR) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/gOvxdZZ) on Codepen.

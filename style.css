@@ -1,371 +1,411 @@
-html {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    height: 100vh;
+@charset "UTF-8";
+@import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
+@import url("//fonts.googleapis.com/css?family=Comfortaa");
+:root {
+  --user-button-circle: rgba(0,0,0,0.025);
+  --user-button-cardborder: rgba(255,255,255,0.25);
+  --user-button-text:#323133;
+  --user-button-shadow:rgba(0,0,0,0.1);
+}
+
+body #user-button {
+  z-index: 1000;
+  bottom: 1rem !important;
+  right: 1rem !important;
+  color: var(--user-button-text);
+  transition: 1s 0s ease-out;
+  -webkit-animation: slide 3s ease-out forwards;
+          animation: slide 3s ease-out forwards;
+}
+@-webkit-keyframes slide {
+  0%, 50% {
+    opacity: 0;
+    display: block !important;
   }
-  html body {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    width: 45rem;
-    padding: 1rem;
-    font-family: "Permanent Marker", cursive;
-  }
-  html body .break {
-    width: 100%;
-  }
-  html body .wincondition .letter {
-    display: none;
-  }
-  html body .hangman .lose {
-    display: none;
-  }
-  html body .hangman .lose div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  html body .hangman .lose div .bottom {
-    font-size: 5vmin;
-  }
-  html body .win, html body .lose {
-    display: grid;
-    place-items: center;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.5);
-    color: white;
-    font-size: 10vmin;
-  }
-  html body .win.win, html body .lose.win {
-    color: #2ECC71;
-  }
-  html body .win.lose, html body .lose.lose {
-    color: #D8334A;
-  }
-  html body input {
-    outline: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: #F5F7FA;
-    border-radius: 0.5rem;
-    opacity: 0.75;
-    width: 3rem;
-    height: 3rem;
-    padding: 0 0.5rem;
-    margin: 0.2rem;
-    transform: scale(1) rotate(-4deg);
-    transition: 0.25s -0.1s;
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Permanent Marker", cursive;
-    line-height: 3rem;
-  }
-  html body input:not(:checked) {
-    cursor: pointer;
-  }
-  html body input:not(:checked):hover {
-    transform: scale(1.25) rotate(0deg);
+  100% {
     opacity: 1;
+    display: block !important;
   }
-  html body input:before {
-    content: attr(letter);
+}
+@keyframes slide {
+  0%, 50% {
+    opacity: 0;
+    display: block !important;
   }
-  html body input:checked {
-    color: #D8334A;
-    background: transparent;
+  100% {
     opacity: 1;
+    display: block !important;
   }
-  html body input[correct]:checked {
-    background: #2ECC71;
-    color: #F5F7FA;
+}
+body #user-button .u-card {
+  border-radius: 100%;
+  box-shadow: 0 0 1rem -0.25rem var(--user-button-shadow), inset 0 0 1rem -0.75rem var(--user-button-shadow);
+}
+body #user-button .u-main {
+  cursor: pointer;
+  --user-button-background:var(--user-button-main, #EC87C0);
+}
+body #user-button .u-main img {
+  height: 100%;
+  width: 100%;
+}
+body #user-button .u-main iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+  transition: 0s 4s;
+}
+body #user-button .u-icons {
+  position: relative;
+  z-index: 950;
+  transform: translate(-50%, -50%);
+  background: var(--user-button-circle);
+  box-shadow: 0 0 0 0.125rem var(--user-button-cardborder);
+  border-radius: 100%;
+  transition: 0.25s;
+  opacity: 1 !important;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /*&:before {
+     z-index:-1;
+     position:absolute;
+     top:0; right:0; bottom:0; left:0;
+     content:'';
+
+     backdrop-filter: blur(10px);
+  }*/
+}
+body #user-button .u-icons a {
+  color: inherit;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+}
+body #user-button .u-icons a div {
+  padding: 0.5rem;
+  transition: 0s;
+}
+body #user-button .u-icons a[href="https://twitter.com/Osorpenke"] {
+  position: relative;
+}
+body #user-button .u-icons a[href="https://twitter.com/Osorpenke"]:before {
+  content: "Middle Click";
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  white-space: pre;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-in;
+  background: #fffc;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+body #user-button .u-icons a[href="https://twitter.com/Osorpenke"].show:before {
+  opacity: 1;
+  transition: 0.25s ease-out;
+}
+body #user-button .u-icons a[href="https://twitter.com/Osorpenke"] div {
+  color: #1da1f2;
+}
+body #user-button .u-icons a[href="https://codepen.io/z-"] div {
+  background: black;
+  color: white;
+}
+body #user-button .u-icons a.u-random div {
+  position: relative;
+  top: -1px;
+  -webkit-animation: diespin 2s linear infinite;
+          animation: diespin 2s linear infinite;
+}
+@-webkit-keyframes diespin {
+  0% {
     transform: rotate(0deg);
   }
-  html body input[letter=A]:checked ~ .hint .letter[value=A] {
-    border-bottom: transparent;
-  }
-  html body input[letter=A]:checked ~ .hint .letter[value=A]:before {
-    opacity: 1;
-  }
-  html body input[letter=A]:checked ~ .wincondition .letter[value=A] {
-    display: block;
-  }
-  html body input[letter=B]:checked ~ .hint .letter[value=B] {
-    border-bottom: transparent;
-  }
-  html body input[letter=B]:checked ~ .hint .letter[value=B]:before {
-    opacity: 1;
-  }
-  html body input[letter=B]:checked ~ .wincondition .letter[value=B] {
-    display: block;
-  }
-  html body input[letter=C]:checked ~ .hint .letter[value=C] {
-    border-bottom: transparent;
-  }
-  html body input[letter=C]:checked ~ .hint .letter[value=C]:before {
-    opacity: 1;
-  }
-  html body input[letter=C]:checked ~ .wincondition .letter[value=C] {
-    display: block;
-  }
-  html body input[letter=D]:checked ~ .hint .letter[value=D] {
-    border-bottom: transparent;
-  }
-  html body input[letter=D]:checked ~ .hint .letter[value=D]:before {
-    opacity: 1;
-  }
-  html body input[letter=D]:checked ~ .wincondition .letter[value=D] {
-    display: block;
-  }
-  html body input[letter=E]:checked ~ .hint .letter[value=E] {
-    border-bottom: transparent;
-  }
-  html body input[letter=E]:checked ~ .hint .letter[value=E]:before {
-    opacity: 1;
-  }
-  html body input[letter=E]:checked ~ .wincondition .letter[value=E] {
-    display: block;
-  }
-  html body input[letter=F]:checked ~ .hint .letter[value=F] {
-    border-bottom: transparent;
-  }
-  html body input[letter=F]:checked ~ .hint .letter[value=F]:before {
-    opacity: 1;
-  }
-  html body input[letter=F]:checked ~ .wincondition .letter[value=F] {
-    display: block;
-  }
-  html body input[letter=G]:checked ~ .hint .letter[value=G] {
-    border-bottom: transparent;
-  }
-  html body input[letter=G]:checked ~ .hint .letter[value=G]:before {
-    opacity: 1;
-  }
-  html body input[letter=G]:checked ~ .wincondition .letter[value=G] {
-    display: block;
-  }
-  html body input[letter=H]:checked ~ .hint .letter[value=H] {
-    border-bottom: transparent;
-  }
-  html body input[letter=H]:checked ~ .hint .letter[value=H]:before {
-    opacity: 1;
-  }
-  html body input[letter=H]:checked ~ .wincondition .letter[value=H] {
-    display: block;
-  }
-  html body input[letter=I]:checked ~ .hint .letter[value=I] {
-    border-bottom: transparent;
-  }
-  html body input[letter=I]:checked ~ .hint .letter[value=I]:before {
-    opacity: 1;
-  }
-  html body input[letter=I]:checked ~ .wincondition .letter[value=I] {
-    display: block;
-  }
-  html body input[letter=J]:checked ~ .hint .letter[value=J] {
-    border-bottom: transparent;
-  }
-  html body input[letter=J]:checked ~ .hint .letter[value=J]:before {
-    opacity: 1;
-  }
-  html body input[letter=J]:checked ~ .wincondition .letter[value=J] {
-    display: block;
-  }
-  html body input[letter=K]:checked ~ .hint .letter[value=K] {
-    border-bottom: transparent;
-  }
-  html body input[letter=K]:checked ~ .hint .letter[value=K]:before {
-    opacity: 1;
-  }
-  html body input[letter=K]:checked ~ .wincondition .letter[value=K] {
-    display: block;
-  }
-  html body input[letter=L]:checked ~ .hint .letter[value=L] {
-    border-bottom: transparent;
-  }
-  html body input[letter=L]:checked ~ .hint .letter[value=L]:before {
-    opacity: 1;
-  }
-  html body input[letter=L]:checked ~ .wincondition .letter[value=L] {
-    display: block;
-  }
-  html body input[letter=M]:checked ~ .hint .letter[value=M] {
-    border-bottom: transparent;
-  }
-  html body input[letter=M]:checked ~ .hint .letter[value=M]:before {
-    opacity: 1;
-  }
-  html body input[letter=M]:checked ~ .wincondition .letter[value=M] {
-    display: block;
-  }
-  html body input[letter=N]:checked ~ .hint .letter[value=N] {
-    border-bottom: transparent;
-  }
-  html body input[letter=N]:checked ~ .hint .letter[value=N]:before {
-    opacity: 1;
-  }
-  html body input[letter=N]:checked ~ .wincondition .letter[value=N] {
-    display: block;
-  }
-  html body input[letter=O]:checked ~ .hint .letter[value=O] {
-    border-bottom: transparent;
-  }
-  html body input[letter=O]:checked ~ .hint .letter[value=O]:before {
-    opacity: 1;
-  }
-  html body input[letter=O]:checked ~ .wincondition .letter[value=O] {
-    display: block;
-  }
-  html body input[letter=P]:checked ~ .hint .letter[value=P] {
-    border-bottom: transparent;
-  }
-  html body input[letter=P]:checked ~ .hint .letter[value=P]:before {
-    opacity: 1;
-  }
-  html body input[letter=P]:checked ~ .wincondition .letter[value=P] {
-    display: block;
-  }
-  html body input[letter=Q]:checked ~ .hint .letter[value=Q] {
-    border-bottom: transparent;
-  }
-  html body input[letter=Q]:checked ~ .hint .letter[value=Q]:before {
-    opacity: 1;
-  }
-  html body input[letter=Q]:checked ~ .wincondition .letter[value=Q] {
-    display: block;
-  }
-  html body input[letter=R]:checked ~ .hint .letter[value=R] {
-    border-bottom: transparent;
-  }
-  html body input[letter=R]:checked ~ .hint .letter[value=R]:before {
-    opacity: 1;
-  }
-  html body input[letter=R]:checked ~ .wincondition .letter[value=R] {
-    display: block;
-  }
-  html body input[letter=S]:checked ~ .hint .letter[value=S] {
-    border-bottom: transparent;
-  }
-  html body input[letter=S]:checked ~ .hint .letter[value=S]:before {
-    opacity: 1;
-  }
-  html body input[letter=S]:checked ~ .wincondition .letter[value=S] {
-    display: block;
-  }
-  html body input[letter=T]:checked ~ .hint .letter[value=T] {
-    border-bottom: transparent;
-  }
-  html body input[letter=T]:checked ~ .hint .letter[value=T]:before {
-    opacity: 1;
-  }
-  html body input[letter=T]:checked ~ .wincondition .letter[value=T] {
-    display: block;
-  }
-  html body input[letter=U]:checked ~ .hint .letter[value=U] {
-    border-bottom: transparent;
-  }
-  html body input[letter=U]:checked ~ .hint .letter[value=U]:before {
-    opacity: 1;
-  }
-  html body input[letter=U]:checked ~ .wincondition .letter[value=U] {
-    display: block;
-  }
-  html body input[letter=V]:checked ~ .hint .letter[value=V] {
-    border-bottom: transparent;
-  }
-  html body input[letter=V]:checked ~ .hint .letter[value=V]:before {
-    opacity: 1;
-  }
-  html body input[letter=V]:checked ~ .wincondition .letter[value=V] {
-    display: block;
-  }
-  html body input[letter=W]:checked ~ .hint .letter[value=W] {
-    border-bottom: transparent;
-  }
-  html body input[letter=W]:checked ~ .hint .letter[value=W]:before {
-    opacity: 1;
-  }
-  html body input[letter=W]:checked ~ .wincondition .letter[value=W] {
-    display: block;
-  }
-  html body input[letter=X]:checked ~ .hint .letter[value=X] {
-    border-bottom: transparent;
-  }
-  html body input[letter=X]:checked ~ .hint .letter[value=X]:before {
-    opacity: 1;
-  }
-  html body input[letter=X]:checked ~ .wincondition .letter[value=X] {
-    display: block;
-  }
-  html body input[letter=Y]:checked ~ .hint .letter[value=Y] {
-    border-bottom: transparent;
-  }
-  html body input[letter=Y]:checked ~ .hint .letter[value=Y]:before {
-    opacity: 1;
-  }
-  html body input[letter=Y]:checked ~ .wincondition .letter[value=Y] {
-    display: block;
-  }
-  html body input[letter=Z]:checked ~ .hint .letter[value=Z] {
-    border-bottom: transparent;
-  }
-  html body input[letter=Z]:checked ~ .hint .letter[value=Z]:before {
-    opacity: 1;
-  }
-  html body input[letter=Z]:checked ~ .wincondition .letter[value=Z] {
-    display: block;
-  }
-  html body svg {
-    width: 30rem;
-  }
-  html body svg * {
-    fill: none;
-    stroke: #EEEEEE;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    transition: 0.25s;
-  }
-  html body input:not([correct]):checked ~ .hangman .stage1,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage2,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage3,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage4,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage5,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage6,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage7,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage8,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage9,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage10 {
-    stroke: black;
-    display: grid;
-  }
-  html body .hint {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  html body .hint .letter {
-    width: 3rem;
-    height: 3rem;
-    margin: 0.25rem;
-    border-bottom: 0.125rem solid black;
-    font-size: 3rem;
-    text-align: center;
-  }
-  html body .hint .letter, html body .hint .letter:before {
-    transition: 0.25s;
-  }
-  html body .hint .letter:before {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes diespin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body #user-button .u-icons a.u-random:not(:hover) div {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+body #user-button .u-icons > * {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: var(--singlecolour);
+  border-radius: 100%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: 0.25s -0.05s;
+}
+body #user-button .u-icons > *:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #user-button .u-icons > *:hover, body #user-button .u-icons > *:focus-within {
+  background: var(--hcolour);
+}
+body #user-button .u-icons > *:first-child:nth-last-child(1):nth-child(1), body #user-button .u-icons > *:first-child:nth-last-child(1) ~ *:nth-child(1) {
+  left: 25%;
+  top: 25%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(2):nth-child(1), body #user-button .u-icons > *:first-child:nth-last-child(2) ~ *:nth-child(1) {
+  left: 37.5%;
+  top: 18.75%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(2):nth-child(2), body #user-button .u-icons > *:first-child:nth-last-child(2) ~ *:nth-child(2) {
+  left: 18.75%;
+  top: 37.5%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(3):nth-child(1), body #user-button .u-icons > *:first-child:nth-last-child(3) ~ *:nth-child(1) {
+  left: 50%;
+  top: 15.625%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(3):nth-child(2), body #user-button .u-icons > *:first-child:nth-last-child(3) ~ *:nth-child(2) {
+  left: 25%;
+  top: 25%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(3):nth-child(3), body #user-button .u-icons > *:first-child:nth-last-child(3) ~ *:nth-child(3) {
+  left: 15.625%;
+  top: 50%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(1), body #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(1) {
+  left: 62.5%;
+  top: 18.75%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(2), body #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(2) {
+  left: 37.5%;
+  top: 18.75%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(3), body #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(3) {
+  left: 18.75%;
+  top: 37.5%;
+}
+body #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(4), body #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(4) {
+  left: 18.75%;
+  top: 62.5%;
+}
+body #user-button:hover .u-icons, body #user-button:focus-within .u-icons {
+  width: 300% !important;
+  height: 300% !important;
+}
+
+body {
+  --grid-size: 20vmin;
+  --grid-gap: 2vmin;
+  --background: 255, 255, 255;
+  --tile-background: #aab2bd;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: rgb(var(--background));
+  font-family: Comfortaa, sans-serif;
+  transition: 0.25s -0.1s;
+}
+body.dark {
+  --background: 60, 60, 60;
+  --tile-background: #232223;
+  color: white;
+}
+@media (prefers-color-scheme: dark) {
+  body:not(.light) {
+    --background: 60, 60, 60;
+    --tile-background: #232223;
+    color: white;
+  }
+}
+body .overlay {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  place-items: center;
+  background: rgba(var(--background), 0.4);
+}
+body .overlay .message {
+  font-size: 8vmin;
+}
+body .board input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .overlay,
+body .board input.player-1.c-3:checked ~ input.player-1.c-3:checked ~ input.player-1.c-3:checked ~ .overlay,
+body .board input.player-1.r-3:checked ~ input.player-1.r-3:checked ~ input.player-1.r-3:checked ~ .overlay,
+body .board input.player-1.d-3:checked ~ input.player-1.d-3:checked ~ input.player-1.d-3:checked ~ .overlay,
+body .board input.player-1.c-2:checked ~ input.player-1.c-2:checked ~ input.player-1.c-2:checked ~ .overlay,
+body .board input.player-1.r-2:checked ~ input.player-1.r-2:checked ~ input.player-1.r-2:checked ~ .overlay,
+body .board input.player-1.d-2:checked ~ input.player-1.d-2:checked ~ input.player-1.d-2:checked ~ .overlay,
+body .board input.player-1.c-1:checked ~ input.player-1.c-1:checked ~ input.player-1.c-1:checked ~ .overlay,
+body .board input.player-1.r-1:checked ~ input.player-1.r-1:checked ~ input.player-1.r-1:checked ~ .overlay,
+body .board input.player-1.d-1:checked ~ input.player-1.d-1:checked ~ input.player-1.d-1:checked ~ .overlay,
+body .board input.player-2.c-3:checked ~ input.player-2.c-3:checked ~ input.player-2.c-3:checked ~ .overlay,
+body .board input.player-2.r-3:checked ~ input.player-2.r-3:checked ~ input.player-2.r-3:checked ~ .overlay,
+body .board input.player-2.d-3:checked ~ input.player-2.d-3:checked ~ input.player-2.d-3:checked ~ .overlay,
+body .board input.player-2.c-2:checked ~ input.player-2.c-2:checked ~ input.player-2.c-2:checked ~ .overlay,
+body .board input.player-2.r-2:checked ~ input.player-2.r-2:checked ~ input.player-2.r-2:checked ~ .overlay,
+body .board input.player-2.d-2:checked ~ input.player-2.d-2:checked ~ input.player-2.d-2:checked ~ .overlay,
+body .board input.player-2.c-1:checked ~ input.player-2.c-1:checked ~ input.player-2.c-1:checked ~ .overlay,
+body .board input.player-2.r-1:checked ~ input.player-2.r-1:checked ~ input.player-2.r-1:checked ~ .overlay,
+body .board input.player-2.d-1:checked ~ input.player-2.d-1:checked ~ input.player-2.d-1:checked ~ .overlay {
+  display: grid;
+  -webkit-animation: fade-in 0.5s;
+          animation: fade-in 0.5s;
+}
+@-webkit-keyframes fade-in {
+  from {
     opacity: 0;
-    content: attr(value);
   }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body .board input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .overlay .message:before {
+  content: "It's a tie!";
+}
+body .board input.player-1.c-3:checked ~ input.player-1.c-3:checked ~ input.player-1.c-3:checked ~ .overlay .message:before, body .board input.player-1.r-3:checked ~ input.player-1.r-3:checked ~ input.player-1.r-3:checked ~ .overlay .message:before, body .board input.player-1.d-3:checked ~ input.player-1.d-3:checked ~ input.player-1.d-3:checked ~ .overlay .message:before, body .board input.player-1.c-2:checked ~ input.player-1.c-2:checked ~ input.player-1.c-2:checked ~ .overlay .message:before, body .board input.player-1.r-2:checked ~ input.player-1.r-2:checked ~ input.player-1.r-2:checked ~ .overlay .message:before, body .board input.player-1.d-2:checked ~ input.player-1.d-2:checked ~ input.player-1.d-2:checked ~ .overlay .message:before, body .board input.player-1.c-1:checked ~ input.player-1.c-1:checked ~ input.player-1.c-1:checked ~ .overlay .message:before, body .board input.player-1.r-1:checked ~ input.player-1.r-1:checked ~ input.player-1.r-1:checked ~ .overlay .message:before, body .board input.player-1.d-1:checked ~ input.player-1.d-1:checked ~ input.player-1.d-1:checked ~ .overlay .message:before {
+  content: "Player 1 wins!" !important;
+}
+body .board input.player-2.c-3:checked ~ input.player-2.c-3:checked ~ input.player-2.c-3:checked ~ .overlay .message:before, body .board input.player-2.r-3:checked ~ input.player-2.r-3:checked ~ input.player-2.r-3:checked ~ .overlay .message:before, body .board input.player-2.d-3:checked ~ input.player-2.d-3:checked ~ input.player-2.d-3:checked ~ .overlay .message:before, body .board input.player-2.c-2:checked ~ input.player-2.c-2:checked ~ input.player-2.c-2:checked ~ .overlay .message:before, body .board input.player-2.r-2:checked ~ input.player-2.r-2:checked ~ input.player-2.r-2:checked ~ .overlay .message:before, body .board input.player-2.d-2:checked ~ input.player-2.d-2:checked ~ input.player-2.d-2:checked ~ .overlay .message:before, body .board input.player-2.c-1:checked ~ input.player-2.c-1:checked ~ input.player-2.c-1:checked ~ .overlay .message:before, body .board input.player-2.r-1:checked ~ input.player-2.r-1:checked ~ input.player-2.r-1:checked ~ .overlay .message:before, body .board input.player-2.d-1:checked ~ input.player-2.d-1:checked ~ input.player-2.d-1:checked ~ .overlay .message:before {
+  content: "Player 2 wins!" !important;
+}
+body .board {
+  display: grid;
+  grid-template-columns: repeat(3, var(--grid-size));
+  grid-template-rows: repeat(3, var(--grid-size));
+  grid-template-areas: "_1 _2 _3" "_4 _5 _6" "_7 _8 _9";
+  grid-gap: var(--grid-gap);
+  place-items: center;
+}
+body .board input {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: 0.25vmin solid var(--background);
+  background: var(--tile-background);
+  color: white;
+  outline: none;
+  transition: 0.25s -0.1s;
+}
+body .board input:not(.turn-1) {
+  display: none;
+}
+body .board input:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  opacity: 0;
+}
+body .board input:checked {
+  z-index: 10;
+}
+body .board input:not(:checked):hover {
+  cursor: pointer;
+}
+body .board input:not(:checked):hover:before, body .board input:checked:before {
+  opacity: 1;
+}
+body .board input.player-1:hover {
+  background: #4a89dc;
+}
+body .board input.player-1:checked {
+  background: #5d9cec;
+}
+body .board input.player-1:before {
+  content: "";
+  font-size: calc(var(--grid-size) / 1.5);
+}
+body .board input.player-2:hover {
+  background: #da4453;
+}
+body .board input.player-2:checked {
+  background: #ed5565;
+}
+body .board input.player-2:before {
+  content: "";
+  font-size: calc(var(--grid-size) / 2);
+}
+body .board input:nth-child(9n+1) {
+  grid-area: _1;
+}
+body .board input:nth-child(9n+2) {
+  grid-area: _2;
+}
+body .board input:nth-child(9n+3) {
+  grid-area: _3;
+}
+body .board input:nth-child(9n+4) {
+  grid-area: _4;
+}
+body .board input:nth-child(9n+5) {
+  grid-area: _5;
+}
+body .board input:nth-child(9n+6) {
+  grid-area: _6;
+}
+body .board input:nth-child(9n+7) {
+  grid-area: _7;
+}
+body .board input:nth-child(9n+8) {
+  grid-area: _8;
+}
+body .board input:nth-child(9n+9) {
+  grid-area: _9;
+}
+body .board input.turn-1:checked ~ .turn-2 {
+  display: block;
+}
+body .board input.turn-2:checked ~ .turn-3 {
+  display: block;
+}
+body .board input.turn-3:checked ~ .turn-4 {
+  display: block;
+}
+body .board input.turn-4:checked ~ .turn-5 {
+  display: block;
+}
+body .board input.turn-5:checked ~ .turn-6 {
+  display: block;
+}
+body .board input.turn-6:checked ~ .turn-7 {
+  display: block;
+}
+body .board input.turn-7:checked ~ .turn-8 {
+  display: block;
+}
+body .board input.turn-8:checked ~ .turn-9 {
+  display: block;
+}

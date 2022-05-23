@@ -5,9 +5,23 @@ Check my branches and have fun!
 View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
 
 
-# Animated Tab Bar Effects
+# [Animated Tab Bar Effects](https://github.com/filippoerbisti/css_effect/tree/animated-tab-bar)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/qBxXMqR) on Codepen.
+
+# [Hex Circle Follow on Mouse](https://github.com/filippoerbisti/css_effect/tree/hex-circle-follow-mouse)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/gOvxdZZ) on Codepen.
+
+# [Hangman CSS Animation](https://github.com/filippoerbisti/css_effect/tree/hangman-css-animation)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQvGqN) on Codepen.
+
+# [Tic-Tac-Toe CSS](https://github.com/filippoerbisti/css_effect/tree/tic-tac-toe-css)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEeaGQ) on Codepen.
+
+
 
 # [3D Flip Checkbox Animation Effects](https://github.com/filippoerbisti/css_effect/tree/3d-flip-checkbox)
 

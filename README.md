@@ -1,3 +1,3 @@
-# Swing Figure CSS Animation
+# Welcome Text CSS Animation
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/dydzgKr) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/zYRdmMa) on Codepen.

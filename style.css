@@ -1,371 +1,296 @@
-html {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
+:root {
+    --main-color: rgb(0, 128, 0);
+    --main-color-dark: rgb(0, 100, 0);
+    --unit: 0.85vw;
+    --time: 1.5s;
+  }
+  
+  body {
     height: 100vh;
-  }
-  html body {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    width: 45rem;
-    padding: 1rem;
-    font-family: "Permanent Marker", cursive;
-  }
-  html body .break {
-    width: 100%;
-  }
-  html body .wincondition .letter {
-    display: none;
-  }
-  html body .hangman .lose {
-    display: none;
-  }
-  html body .hangman .lose div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  html body .hangman .lose div .bottom {
-    font-size: 5vmin;
-  }
-  html body .win, html body .lose {
+    margin: 0;
     display: grid;
     place-items: center;
-    z-index: 1;
-    position: fixed;
-    top: 0;
+    background-color: #5ec96b;
+    background-image: linear-gradient(0deg, #5ec96b 0%, #e9e9e9 100%);
+  }
+  
+  .ground {
+    position: absolute;
     left: 0;
     right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(64 * var(--unit));
+    bottom: calc(6 * var(--unit));
+    height: calc(4 * var(--unit));
+    background-color: var(--main-color);
+    border-radius: calc(2 * var(--unit));
+  }
+  
+  .dude {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(28 * var(--unit));
+    bottom: calc(20 * var(--unit));
+  }
+  
+  .upper-body {
+    position: relative;
+    left: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.5);
-    color: white;
-    font-size: 10vmin;
-  }
-  html body .win.win, html body .lose.win {
-    color: #2ECC71;
-  }
-  html body .win.lose, html body .lose.lose {
-    color: #D8334A;
-  }
-  html body input {
-    outline: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: #F5F7FA;
-    border-radius: 0.5rem;
-    opacity: 0.75;
-    width: 3rem;
-    height: 3rem;
-    padding: 0 0.5rem;
-    margin: 0.2rem;
-    transform: scale(1) rotate(-4deg);
-    transition: 0.25s -0.1s;
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Permanent Marker", cursive;
-    line-height: 3rem;
-  }
-  html body input:not(:checked) {
-    cursor: pointer;
-  }
-  html body input:not(:checked):hover {
-    transform: scale(1.25) rotate(0deg);
-    opacity: 1;
-  }
-  html body input:before {
-    content: attr(letter);
-  }
-  html body input:checked {
-    color: #D8334A;
-    background: transparent;
-    opacity: 1;
-  }
-  html body input[correct]:checked {
-    background: #2ECC71;
-    color: #F5F7FA;
-    transform: rotate(0deg);
-  }
-  html body input[letter=A]:checked ~ .hint .letter[value=A] {
-    border-bottom: transparent;
-  }
-  html body input[letter=A]:checked ~ .hint .letter[value=A]:before {
-    opacity: 1;
-  }
-  html body input[letter=A]:checked ~ .wincondition .letter[value=A] {
-    display: block;
-  }
-  html body input[letter=B]:checked ~ .hint .letter[value=B] {
-    border-bottom: transparent;
-  }
-  html body input[letter=B]:checked ~ .hint .letter[value=B]:before {
-    opacity: 1;
-  }
-  html body input[letter=B]:checked ~ .wincondition .letter[value=B] {
-    display: block;
-  }
-  html body input[letter=C]:checked ~ .hint .letter[value=C] {
-    border-bottom: transparent;
-  }
-  html body input[letter=C]:checked ~ .hint .letter[value=C]:before {
-    opacity: 1;
-  }
-  html body input[letter=C]:checked ~ .wincondition .letter[value=C] {
-    display: block;
-  }
-  html body input[letter=D]:checked ~ .hint .letter[value=D] {
-    border-bottom: transparent;
-  }
-  html body input[letter=D]:checked ~ .hint .letter[value=D]:before {
-    opacity: 1;
-  }
-  html body input[letter=D]:checked ~ .wincondition .letter[value=D] {
-    display: block;
-  }
-  html body input[letter=E]:checked ~ .hint .letter[value=E] {
-    border-bottom: transparent;
-  }
-  html body input[letter=E]:checked ~ .hint .letter[value=E]:before {
-    opacity: 1;
-  }
-  html body input[letter=E]:checked ~ .wincondition .letter[value=E] {
-    display: block;
-  }
-  html body input[letter=F]:checked ~ .hint .letter[value=F] {
-    border-bottom: transparent;
-  }
-  html body input[letter=F]:checked ~ .hint .letter[value=F]:before {
-    opacity: 1;
-  }
-  html body input[letter=F]:checked ~ .wincondition .letter[value=F] {
-    display: block;
-  }
-  html body input[letter=G]:checked ~ .hint .letter[value=G] {
-    border-bottom: transparent;
-  }
-  html body input[letter=G]:checked ~ .hint .letter[value=G]:before {
-    opacity: 1;
-  }
-  html body input[letter=G]:checked ~ .wincondition .letter[value=G] {
-    display: block;
-  }
-  html body input[letter=H]:checked ~ .hint .letter[value=H] {
-    border-bottom: transparent;
-  }
-  html body input[letter=H]:checked ~ .hint .letter[value=H]:before {
-    opacity: 1;
-  }
-  html body input[letter=H]:checked ~ .wincondition .letter[value=H] {
-    display: block;
-  }
-  html body input[letter=I]:checked ~ .hint .letter[value=I] {
-    border-bottom: transparent;
-  }
-  html body input[letter=I]:checked ~ .hint .letter[value=I]:before {
-    opacity: 1;
-  }
-  html body input[letter=I]:checked ~ .wincondition .letter[value=I] {
-    display: block;
-  }
-  html body input[letter=J]:checked ~ .hint .letter[value=J] {
-    border-bottom: transparent;
-  }
-  html body input[letter=J]:checked ~ .hint .letter[value=J]:before {
-    opacity: 1;
-  }
-  html body input[letter=J]:checked ~ .wincondition .letter[value=J] {
-    display: block;
-  }
-  html body input[letter=K]:checked ~ .hint .letter[value=K] {
-    border-bottom: transparent;
-  }
-  html body input[letter=K]:checked ~ .hint .letter[value=K]:before {
-    opacity: 1;
-  }
-  html body input[letter=K]:checked ~ .wincondition .letter[value=K] {
-    display: block;
-  }
-  html body input[letter=L]:checked ~ .hint .letter[value=L] {
-    border-bottom: transparent;
-  }
-  html body input[letter=L]:checked ~ .hint .letter[value=L]:before {
-    opacity: 1;
-  }
-  html body input[letter=L]:checked ~ .wincondition .letter[value=L] {
-    display: block;
-  }
-  html body input[letter=M]:checked ~ .hint .letter[value=M] {
-    border-bottom: transparent;
-  }
-  html body input[letter=M]:checked ~ .hint .letter[value=M]:before {
-    opacity: 1;
-  }
-  html body input[letter=M]:checked ~ .wincondition .letter[value=M] {
-    display: block;
-  }
-  html body input[letter=N]:checked ~ .hint .letter[value=N] {
-    border-bottom: transparent;
-  }
-  html body input[letter=N]:checked ~ .hint .letter[value=N]:before {
-    opacity: 1;
-  }
-  html body input[letter=N]:checked ~ .wincondition .letter[value=N] {
-    display: block;
-  }
-  html body input[letter=O]:checked ~ .hint .letter[value=O] {
-    border-bottom: transparent;
-  }
-  html body input[letter=O]:checked ~ .hint .letter[value=O]:before {
-    opacity: 1;
-  }
-  html body input[letter=O]:checked ~ .wincondition .letter[value=O] {
-    display: block;
-  }
-  html body input[letter=P]:checked ~ .hint .letter[value=P] {
-    border-bottom: transparent;
-  }
-  html body input[letter=P]:checked ~ .hint .letter[value=P]:before {
-    opacity: 1;
-  }
-  html body input[letter=P]:checked ~ .wincondition .letter[value=P] {
-    display: block;
-  }
-  html body input[letter=Q]:checked ~ .hint .letter[value=Q] {
-    border-bottom: transparent;
-  }
-  html body input[letter=Q]:checked ~ .hint .letter[value=Q]:before {
-    opacity: 1;
-  }
-  html body input[letter=Q]:checked ~ .wincondition .letter[value=Q] {
-    display: block;
-  }
-  html body input[letter=R]:checked ~ .hint .letter[value=R] {
-    border-bottom: transparent;
-  }
-  html body input[letter=R]:checked ~ .hint .letter[value=R]:before {
-    opacity: 1;
-  }
-  html body input[letter=R]:checked ~ .wincondition .letter[value=R] {
-    display: block;
-  }
-  html body input[letter=S]:checked ~ .hint .letter[value=S] {
-    border-bottom: transparent;
-  }
-  html body input[letter=S]:checked ~ .hint .letter[value=S]:before {
-    opacity: 1;
-  }
-  html body input[letter=S]:checked ~ .wincondition .letter[value=S] {
-    display: block;
-  }
-  html body input[letter=T]:checked ~ .hint .letter[value=T] {
-    border-bottom: transparent;
-  }
-  html body input[letter=T]:checked ~ .hint .letter[value=T]:before {
-    opacity: 1;
-  }
-  html body input[letter=T]:checked ~ .wincondition .letter[value=T] {
-    display: block;
-  }
-  html body input[letter=U]:checked ~ .hint .letter[value=U] {
-    border-bottom: transparent;
-  }
-  html body input[letter=U]:checked ~ .hint .letter[value=U]:before {
-    opacity: 1;
-  }
-  html body input[letter=U]:checked ~ .wincondition .letter[value=U] {
-    display: block;
-  }
-  html body input[letter=V]:checked ~ .hint .letter[value=V] {
-    border-bottom: transparent;
-  }
-  html body input[letter=V]:checked ~ .hint .letter[value=V]:before {
-    opacity: 1;
-  }
-  html body input[letter=V]:checked ~ .wincondition .letter[value=V] {
-    display: block;
-  }
-  html body input[letter=W]:checked ~ .hint .letter[value=W] {
-    border-bottom: transparent;
-  }
-  html body input[letter=W]:checked ~ .hint .letter[value=W]:before {
-    opacity: 1;
-  }
-  html body input[letter=W]:checked ~ .wincondition .letter[value=W] {
-    display: block;
-  }
-  html body input[letter=X]:checked ~ .hint .letter[value=X] {
-    border-bottom: transparent;
-  }
-  html body input[letter=X]:checked ~ .hint .letter[value=X]:before {
-    opacity: 1;
-  }
-  html body input[letter=X]:checked ~ .wincondition .letter[value=X] {
-    display: block;
-  }
-  html body input[letter=Y]:checked ~ .hint .letter[value=Y] {
-    border-bottom: transparent;
-  }
-  html body input[letter=Y]:checked ~ .hint .letter[value=Y]:before {
-    opacity: 1;
-  }
-  html body input[letter=Y]:checked ~ .wincondition .letter[value=Y] {
-    display: block;
-  }
-  html body input[letter=Z]:checked ~ .hint .letter[value=Z] {
-    border-bottom: transparent;
-  }
-  html body input[letter=Z]:checked ~ .hint .letter[value=Z]:before {
-    opacity: 1;
-  }
-  html body input[letter=Z]:checked ~ .wincondition .letter[value=Z] {
-    display: block;
-  }
-  html body svg {
-    width: 30rem;
-  }
-  html body svg * {
-    fill: none;
-    stroke: #EEEEEE;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    transition: 0.25s;
-  }
-  html body input:not([correct]):checked ~ .hangman .stage1,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage2,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage3,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage4,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage5,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage6,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage7,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage8,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage9,
-  html body input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ input:not([correct]):checked ~ .hangman .stage10 {
-    stroke: black;
-    display: grid;
-  }
-  html body .hint {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  html body .hint .letter {
-    width: 3rem;
-    height: 3rem;
-    margin: 0.25rem;
-    border-bottom: 0.125rem solid black;
-    font-size: 3rem;
-    text-align: center;
-  }
-  html body .hint .letter, html body .hint .letter:before {
-    transition: 0.25s;
-  }
-  html body .hint .letter:before {
-    opacity: 0;
-    content: attr(value);
+    width: calc(28 * var(--unit));
+    height: calc(36 * var(--unit));
+    -webkit-animation-name: shuffle;
+            animation-name: shuffle;
+    -webkit-animation-duration: calc(0.5 * var(--time));
+            animation-duration: calc(0.5 * var(--time));
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: calc(-0.25 * var(--time));
+            animation-delay: calc(-0.25 * var(--time));
+  }
+  
+  .melon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(8 * var(--unit));
+    height: calc(8 * var(--unit));
+    background-color: var(--main-color);
+    border-radius: calc(0.5 * var(--unit)) calc(0.5 * var(--unit)) 50% 50%;
+    -webkit-animation-name: nod;
+            animation-name: nod;
+    -webkit-animation-duration: calc(1 * var(--time));
+            animation-duration: calc(1 * var(--time));
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-delay: calc(-1.5 * var(--time));
+            animation-delay: calc(-1.5 * var(--time));
+    transform-origin: 25% 75%;
+  }
+  
+  .gut {
+    position: absolute;
+    width: calc(28 * var(--unit));
+    height: calc(28 * var(--unit));
+    top: calc(8 * var(--unit));
+    background-color: var(--main-color-dark);
+    background-image: radial-gradient(closest-corner at 30% 30%, var(--main-color) 15%, var(--main-color-dark) 175%);
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .arm-left,
+  .arm-right {
+    position: absolute;
+    left: 60%;
+    top: 35%;
+    width: calc(7 * var(--unit));
+    height: calc(14 * var(--unit));
+    background-color: var(--main-color);
+    transform-origin: calc(3.5 * var(--unit)) calc(3.5 * var(--unit));
+    border-radius: calc(3.5 * var(--unit));
+    -webkit-animation-name: swing;
+            animation-name: swing;
+    -webkit-animation-duration: calc(0.5 * var(--time));
+            animation-duration: calc(0.5 * var(--time));
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  
+  .arm-right {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    z-index: 3;
+  }
+  
+  .arm-left {
+    z-index: 1;
+    animation-direction: alternate-reverse;
+  }
+  
+  .arm-left::after,
+  .arm-right::after {
+    content: "";
+    position: absolute;
+    width: calc(15 * var(--unit));
+    height: calc(6 * var(--unit));
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color-light);
+    transform-origin: calc(3 * var(--unit)) calc(3 * var(--unit));
+    border-radius: calc(3 * var(--unit)) calc(0.5 * var(--unit)) calc(3 * var(--unit)) calc(3 * var(--unit));
+    -webkit-animation-name: swing-swing;
+            animation-name: swing-swing;
+    -webkit-animation-duration: calc(0.5 * var(--time));
+            animation-duration: calc(0.5 * var(--time));
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    -webkit-animation-delay: calc(-0.5 * var(--time));
+            animation-delay: calc(-0.5 * var(--time));
+  }
+  
+  .arm-left::after {
+    background-color: var(--main-color-dark);
+    background-image: linear-gradient(90deg, var(--main-color-dark) 64%, var(--main-color) 64%, var(--main-color) 72%, var(--main-color-dark) 72%);
+    -webkit-animation-delay: calc(-1 * var(--time));
+            animation-delay: calc(-1 * var(--time));
+  }
+  
+  .arm-right::after {
+    background-color: var(--main-color);
+    background: linear-gradient(90deg, var(--main-color) 64%, var(--main-color-dark) 64%, var(--main-color-dark) 72%, var(--main-color) 72%);
+  }
+  
+  .foot-left,
+  .foot-right {
+    width: calc(12 * var(--unit));
+    height: calc(5 * var(--unit));
+    position: absolute;
+    left: calc(1 * var(--unit));
+    top: calc(41 * var(--unit));
+    -webkit-animation-name: step;
+            animation-name: step;
+    -webkit-animation-duration: calc(1 * var(--time));
+            animation-duration: calc(1 * var(--time));
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    border-radius: calc(3 * var(--unit)) 50% calc(0.5 * var(--unit)) calc(0.5 * var(--unit));
+    transform-origin: 25% 50%;
+  }
+  
+  .foot-left {
+    background-color: var(--main-color-dark);
+  }
+  
+  .foot-right {
+    background-color: var(--main-color);
+    -webkit-animation-delay: calc(-0.5 * var(--time));
+            animation-delay: calc(-0.5 * var(--time));
+  }
+  
+  @-webkit-keyframes step {
+    0% {
+      transform: translateX(0px) translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    25% {
+      transform: translateX(calc(6 * var(--unit))) translateY(calc(-4.5 * var(--unit))) rotate(20deg);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+    }
+    50% {
+      transform: translateX(calc(18 * var(--unit))) translateY(0px);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+    }
+  }
+  
+  @keyframes step {
+    0% {
+      transform: translateX(0px) translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    25% {
+      transform: translateX(calc(6 * var(--unit))) translateY(calc(-4.5 * var(--unit))) rotate(20deg);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+    }
+    50% {
+      transform: translateX(calc(18 * var(--unit))) translateY(0px);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+    }
+  }
+  @-webkit-keyframes shuffle {
+    0%, 50%, 100% {
+      transform: translateY(0px);
+    }
+    25%, 75% {
+      transform: translateY(calc(-2 * var(--unit)));
+    }
+  }
+  @keyframes shuffle {
+    0%, 50%, 100% {
+      transform: translateY(0px);
+    }
+    25%, 75% {
+      transform: translateY(calc(-2 * var(--unit)));
+    }
+  }
+  @-webkit-keyframes nod {
+    0%, 50%, 100% {
+      transform: translateY(0px) rotate(3deg);
+    }
+    25%, 75% {
+      transform: translateY(calc(1.5 * var(--unit))) rotate(-5deg);
+    }
+  }
+  @keyframes nod {
+    0%, 50%, 100% {
+      transform: translateY(0px) rotate(3deg);
+    }
+    25%, 75% {
+      transform: translateY(calc(1.5 * var(--unit))) rotate(-5deg);
+    }
+  }
+  @-webkit-keyframes swing {
+    0% {
+      transform: rotate(50deg);
+    }
+    100% {
+      transform: rotate(-50deg);
+    }
+  }
+  @keyframes swing {
+    0% {
+      transform: rotate(50deg);
+    }
+    100% {
+      transform: rotate(-50deg);
+    }
+  }
+  @-webkit-keyframes swing-swing {
+    0% {
+      transform: rotate(85deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+  @keyframes swing-swing {
+    0% {
+      transform: rotate(85deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
   }

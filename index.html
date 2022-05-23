@@ -4,81 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman CSS Animation</title>
+    <title>Swing Figure CSS Animation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      
-    <!--Scroll down and cheat, if you don't want to cheat and want a different word - change the value of reset and a new word will be generated (not based on reset)-->
-    <input type="radio" letter="A"/>
-    <input type="radio" letter="B"/>
-    <input type="radio" letter="C"/>
-    <input type="radio" letter="D"/>
-    <input type="radio" letter="E" correct="correct"/>
-    <input type="radio" letter="F"/>
-    <input type="radio" letter="G"/>
-    <input type="radio" letter="H"/>
-    <input type="radio" letter="I"/>
-    <input type="radio" letter="J"/>
-    <input type="radio" letter="K"/>
-    <input type="radio" letter="L" correct="correct"/>
-    <input type="radio" letter="M"/>
-    <input type="radio" letter="N"/>
-    <input type="radio" letter="O"/>
-    <input type="radio" letter="P"/>
-    <input type="radio" letter="Q"/>
-    <input type="radio" letter="R"/>
-    <input type="radio" letter="S" correct="correct"/>
-    <input type="radio" letter="T" correct="correct"/>
-    <input type="radio" letter="U"/>
-    <input type="radio" letter="V"/>
-    <input type="radio" letter="W"/>
-    <input type="radio" letter="X"/>
-    <input type="radio" letter="Y" correct="correct"/>
-    <input type="radio" letter="Z"/>
-    <div class="break"></div>
-    <svg class="hangman" viewBox="0 0 96 96">
-    <line class="stage10" x1="62" y1="70" x2="56" y2="56"></line>
-    <line class="stage9" x1="50" y1="70" x2="56" y2="56"></line>
-    <line class="stage8" x1="68" y1="46" x2="56" y2="40"></line>
-    <line class="stage7" x1="44" y1="46" x2="56" y2="40"></line>
-    <line class="stage6" x1="56" y1="40" x2="56" y2="56"></line>
-    <circle class="stage5" cx="56" cy="34" r="6"></circle>
-    <line class="stage4" x1="56" y1="16" x2="56" y2="28"></line>
-    <line class="stage3" x1="24" y1="24" x2="32" y2="16"></line>
-    <line class="stage3" x1="21" y1="16" x2="60" y2="16"></line>
-    <line class="stage2" x1="24" y1="80" x2="24" y2="16"></line>
-    <line class="stage1" x1="16" y1="80" x2="32" y2="80"></line>
-    </svg>
-    <div class="break"></div>
-    <div class="hint">
-    <div class="letter" value="S"></div>
-    <div class="letter" value="T"></div>
-    <div class="letter" value="Y"></div>
-    <div class="letter" value="L"></div>
-    <div class="letter" value="E"></div>
-    </div>
-    <div class="hangman">
-    <div class="lose stage10">
-        <div>
-            <div class="top">Commiserations</div>
-            <div class="bottom">Word was style</div>
+    <div class="dude">
+        <div class="upper-body">
+        <div class="melon"></div>
+        <div class="gut"></div>
+        <div class="arm-left"></div>
+        <div class="arm-right"></div>
         </div>
+        <div class="foot-left"></div>
+        <div class="foot-right"></div>
     </div>
-    </div>
-    <div class="wincondition">
-    <div class="letter" value="S">
-        <div class="letter" value="T">
-        <div class="letter" value="Y">
-            <div class="letter" value="L">
-            <div class="letter" value="E">
-                <div class="win">Congratulations</div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-
+    <div class="ground"></div>
 </body>
 </html>

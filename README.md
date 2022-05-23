@@ -5,6 +5,10 @@ Check my branches and have fun!
 View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
 
 
+# Animated Tab Bar Effects
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/qBxXMqR) on Codepen.
+
 # [3D Flip Checkbox Animation Effects](https://github.com/filippoerbisti/css_effect/tree/3d-flip-checkbox)
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/MWQoJaZ) on Codepen.

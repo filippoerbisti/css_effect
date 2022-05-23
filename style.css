@@ -1,119 +1,116 @@
-html {
-    box-sizing: border-box;
-    --bgColorMenu : #1d1d27;
-    --duration: .7s;    
-}
 
-html *,
-html *::before,
-html *::after {
-    box-sizing: inherit;
-}
-
-body{
+* {
+    user-select: none;
     margin: 0;
-    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+    /* cursor: pointer; */
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+.hexagon {
+    position: relative;
+    margin: 1px;
+    width: 100px;
+    height: 110px;
+    background: #111;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: 2s;
+    z-index: 3;
+}
+
+.hexagon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.02);
+    z-index: 1000;
+}
+
+.hexagon::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background: #111;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon:hover {
+    background: #0f0;
+    transition: 0s;
+}
+
+.container {
+    /* animation: anime 2.5s linear infinite; */
+    position: relative;
     height: 100vh;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffb457;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color var(--duration);
 }
 
-.menu{
-    margin: 0;
-    display: flex;
-    /* Works well with 100% width  */
-    width: 32.05em;
-    font-size: 1.5em;
-    padding: 0 2.85em;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bgColorMenu);
+.stringOrRow {
+    display: inline-flex;
+    margin-top: -32px;
+    margin-left: -50px;
 }
 
-.menu__item{
-    all: unset;
-    flex-grow: 1;
-    z-index: 100;
-    display: flex;
-    cursor: pointer;
-    position: relative;
-    border-radius: 50%;
-    align-items: center;
-    will-change: transform;
-    justify-content: center;
-    padding: 0.55em 0 0.85em;
-    transition: transform var(--timeOut , var(--duration));
+.stringOrRow:nth-child(even) {
+    margin-left: 1px;
 }
 
-.menu__item::before{
-    content: "";
-    z-index: -1;
-    width: 4.2em;
-    height: 4.2em;
-    border-radius: 50%;
+#cursor {
+    animation: anime 2.5s linear infinite;
     position: absolute;
-    transform: scale(0);
-    transition: background-color var(--duration), transform var(--duration);
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: #0f0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: rotate(45deg); */
+    z-index: 1;
 }
 
 
-.menu__item.active {
-    transform: translate3d(0, -.8em , 0);
-}
+/* To cirle -> To Lens */
+/* #cursor::before {
+    content: '';
+    animation: anime 2.5s linear infinite;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 500px;
+    background: #0f0;
+    border-radius: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transform: rotate(100deg);
 
-.menu__item.active::before{
-    transform: scale(1);
-    background-color: var(--bgColorItem);
-}
+} */
 
-.icon{
-    width: 2.6em;
-    height: 2.6em;
-    stroke: white;
-    fill: transparent;
-    stroke-width: 1pt;
-    stroke-miterlimit: 10;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 400;
-}
+@keyframes anime {
 
-.menu__item.active .icon {
-    animation: strok 1.5s reverse;
-}
-
-@keyframes strok {
-    100% {
-        stroke-dashoffset: 400;
+    0% {
+        filter: hue-rotate(0deg);
     }
 
-}
-
-.menu__border{
-    left: 0;
-    bottom: 99%;
-    width: 10.9em;
-    height: 2.4em;
-    position: absolute;
-    clip-path: url(#menu);
-    will-change: transform;
-    background-color: var(--bgColorMenu);
-    transition: transform var(--timeOut , var(--duration));
-}
-
-.svg-container {
-    width: 0;
-    height: 0;
-}
-
-
-@media screen and (max-width: 50em) {
-    .menu{
-        font-size: .8em;
+    100% {
+        filter: hue-rotate(360deg);
     }
 }

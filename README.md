@@ -21,6 +21,10 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQvGqN) on Codepen.
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEeaGQ) on Codepen.
 
+# Swing Figure CSS Animation
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/dydzgKr) on Codepen.
+
 
 
 # [3D Flip Checkbox Animation Effects](https://github.com/filippoerbisti/css_effect/tree/3d-flip-checkbox)

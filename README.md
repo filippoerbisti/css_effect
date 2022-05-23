@@ -1,3 +1,3 @@
-# Animated Hot Cup of Tea
+# Animated Tab Bar Effects
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEwowL) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/qBxXMqR) on Codepen.

@@ -29,7 +29,7 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/BaYZLGB) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/OJQgNYm) on Codepen.
 
-# Endless Road Animation Effects
+# [Endless Road Animation Effects](https://github.com/filippoerbisti/css_effect/tree/endless-road-animation)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/wvyerJW) on Codepen.
 
@@ -49,7 +49,7 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/ExQXgKZ) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/MWQobzB) on Codepen.
 
-# Snake Cube Loader Animation Effects
+# [Snake Cube Loader Animation Effects](https://github.com/filippoerbisti/css_effect/tree/snake-cube-loader)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/MWQoEXV) on Codepen.
 
@@ -61,11 +61,11 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/qBxjamV) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/NWygbPr) on Codepen.
 
-# Glowing Tubelight Text Animation Effects
+# [Glowing Tubelight Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/glowing-tubelight-text)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/JjpJOGj) on Codepen.
 
-# Video Inside Text Animation Effects
+# [Video Inside Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/video-inside-text)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/ZEryXZM) on Codepen.
 
@@ -77,6 +77,6 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/jOZmdLG) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/jOZwwxX) on Codepen.
 
-# Wooden Text Typography Effects
+# [Wooden Text Typography Effects](https://github.com/filippoerbisti/css_effect/tree/wooden-text-typography)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEwowL) on Codepen.

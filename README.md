@@ -4,6 +4,28 @@ Check my branches and have fun!
 
 View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
 
+<details open="open">
+  <summary>Table of Contents</summary>
+
+  <details open="open">
+  <summary>- [About](#about)</summary>
+  
+    - [Built With](#built-with)
+  </details>
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Usage](#usage)
+      - [Cookiecutter template](#cookiecutter-template)
+      - [Manual setup](#manual-setup)
+      - [Variables reference](#variables-reference)
+  - [Roadmap](#roadmap)
+  - [Contributing](#contributing)
+  - [Support](#support)
+  - [License](#license)
+  - [Acknowledgements](#acknowledgements)
+
+</details>
+
 
 # [Animated Tab Bar Effects](https://github.com/filippoerbisti/css_effect/tree/animated-tab-bar)
 

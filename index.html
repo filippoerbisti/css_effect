@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wavy Text Animation Effects</title>
+    <title>Tower Block Game</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
 </head>
 <body>
-    <div class="wavy">
-        <span style="--i:1">L</span>
-        <span style="--i:2">o</span>
-        <span style="--i:3">a</span>
-        <span style="--i:4">d</span>
-        <span style="--i:5">i</span>
-        <span style="--i:6">n</span>
-        <span style="--i:7">g</span>
-        <span style="--i:8">.</span>
-        <span style="--i:9">.</span>
-        <span style="--i:10">.</span>
-    </div>
+    <div id="container">
+        <div id="game"></div>
+        <div id="score">0</div>
+        <div id="instructions">Click (or press the spacebar) to place the block</div>
+        <div class="game-over">
+          <h2>Game Over</h2>
+          <p>You did great, you're the best.</p>
+          <p>Click or spacebar to start again</p>
+        </div>
+        <div class="game-ready">
+          <div id="start-button">Start</div>
+          <div></div>
+        </div>
+      </div>
+
+      <script src="game.js"></script>
     
 </body>
 </html>

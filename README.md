@@ -1,3 +1,3 @@
-# Memory Game CSS JS
+# Ping Pong Game JS
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/WNMZzQp) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/ExQwEXG) on Codepen.

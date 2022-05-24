@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -12,56 +12,66 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #333;
+    background: #3d3d3d;
 }
 
-ul {
-    position: relative;
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    transform-style: preserve-3d;
+    gap: 10px;
+    transform: rotateY(30deg) rotateX(10deg);
 }
 
-ul li {
-    list-style: none;
-}
-
-ul li a {
+.container .text {
     position: relative;
-    font-size: 2em;
-    color: #fff;
-    text-decoration: none;
-    margin: 10px 0;
-    display: inline-block;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: 2.5s ease-in-out;
+    transition-delay: calc(0.25s * var(--j));
 }
 
-#marker {
+.container:hover .text {
+    transform: rotateX(360deg);
+
+
+}
+
+.container:hover .text:last-child {
+    transform: rotateX(630deg);
+}
+
+.container .text::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #373737;
+    transform-origin: left;
+    transform: rotateY(90deg) translateX(-50px);
+}
+
+.container .text:last-child:before {
+    background: #29ab3c;
+}
+
+.container .text span {
     position: absolute;
     top: 0;
-    margin-top: -5px;
-    height: 50px;
-    transition: 0.5s;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#434343, #535353);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    color: #fff;
+    transform-style: preserve-3d;
+    transform: rotateX(calc(90deg * var(--i))) translateZ(50px);
 }
 
-#marker::before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    border-right: 4px solid #30a3ff;
-    border-top: 4px solid #30a3ff;
-    transform: rotate(45deg) translate(-20px, 20px);
+.container .text:last-child span {
+    background: linear-gradient(#29c040, #32ed4e);
+    color: #333;
 }
-
-#marker::after {
-    content: '';
-    width: 15px;
-    height: 15px;
-    border-right: 4px solid #30a3ff;
-    border-top: 4px solid #30a3ff;
-    transform: rotate(225deg) translate(-20px, 20px);
-}
-

@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrow Menu Indicator</title>
+    <title>3D Text Cube Animation Effects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul>
-        <span id="marker"></span>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-
-    <script>
-        let marker = document.querySelector('#marker');
-        let item = document.querySelectorAll('ul li a');
-
-        function Indicator(e) {
-            marker.style.top = e.offsetTop+'px';
-            marker.style.width = e.offsetWidth+'px';
-        }
-
-        item.forEach(link => {
-            link.addEventListener('mousemove', (e) => {
-                Indicator(e.target);
-            })
-        })
-    </script>
+    <div class="container">
+        <div class="text" style="--j:0">
+            <span style="--i:0">2</span>
+            <span style="--i:1">3</span>
+            <span style="--i:2">4</span>
+            <span style="--i:3">5</span>
+        </div>
+        <div class="text" style="--j:1">
+            <span style="--i:0">0</span>
+            <span style="--i:1">1</span>
+            <span style="--i:2">2</span>
+            <span style="--i:3">3</span>
+        </div>
+        <div class="text" style="--j:2">
+            <span style="--i:0">2</span>
+            <span style="--i:1">3</span>
+            <span style="--i:2">4</span>
+            <span style="--i:3">5</span>
+        </div>
+        <div class="text" style="--j:3">
+            <span style="--i:0">2</span>
+            <span style="--i:1">3</span>
+            <span style="--i:2">4</span>
+            <span style="--i:3">5</span>
+        </div>
+    </div>
     
 </body>
 </html>

@@ -82,7 +82,7 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.
 
 ### [Arrow Menu Indicator](https://github.com/filippoerbisti/css_effect/tree/arrow-menu-indicator)
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQXqrB)) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQXqrB) on Codepen.
 
 
 ---

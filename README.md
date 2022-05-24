@@ -49,6 +49,7 @@
   - [Text](#text)
     - [Welcome Text CSS Animation](#welcome-text-css-animation)
     - [Water Wave Text Animation Effects](#water-wave-text-animation-effects)
+    - [3D Text Cube Animation Effects](#3d-text-cube-animation)
     - [Glowing Text Animation Effects](#glowing-text-animation-effects)
     - [Glowing Tubelight Text Animation Effects](#glowing-tubelight-text-animation-effects)
     - [Video Inside Text Animation Effects](#video-inside-text-animation-effects)
@@ -180,6 +181,10 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/zYRdmMa) on Codepen.
 ### [Water Wave Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/water-wave-text-animation)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/BaYZLGB) on Codepen.
+
+### [3D Text Cube Animation Effects](https://github.com/filippoerbisti/css_effect/tree/ed-text-cube-animation)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/PoQJKyd) on Codepen.
 
 ### [Glowing Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/glowing-text-animation)
 

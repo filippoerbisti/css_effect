@@ -1,3 +1,3 @@
-# Wavy Text Animation Effects
+# Tower Block Game CSS JS
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/YzereVJ) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/GRQMQzK) on Codepen.

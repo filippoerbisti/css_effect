@@ -56,7 +56,7 @@
     - [Video Inside Text Animation Effects](#video-inside-text-animation-effects)
     - [Wooden Text Typography Effects](#wooden-text-typography-effects)
   - [Minigame](#minigame)
-    - [Tower Block Game CSS JS](#tower-block-game-css-js]
+    - [Tower Block Game CSS JS](#tower-block-game-css-js)
     - [Hangman CSS Animation](#hangman-css-animation)
     - [Tic-Tac-Toe CSS](#tic-tac-toe-css)
   - [LICENSE](#license)

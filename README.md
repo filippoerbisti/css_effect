@@ -1,3 +1,3 @@
-# Isometric Menu Hover Effect
+# Arrow Menu Indicator
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/BaYRMrW) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQXqrB)) on Codepen.

@@ -1,5 +1,5 @@
 <h1 align="center">
-  Some cool CSS Animated Effects
+  Some cool CSS Animated Effects 🤌
 </h1>
 
 <h4 align="center">Be sure to :star: my configuration repo so you can keep up to date on any daily progress!</h4>

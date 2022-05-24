@@ -62,7 +62,7 @@
     - [Hangman CSS Animation](#hangman-css-animation)
     - [Tic-Tac-Toe CSS](#tic-tac-toe-css)
   - [Widget](#widget)
-    - [Analog Clock Widget Light/Dark](#analog-clock-widget-light/dark)
+    - [Analog Clock Widget Light/Dark](#analog-clock-widget-light-dark)
     - [Event Calendar Widget](#event-calendar-widget)
   - [LICENSE](#license)
 

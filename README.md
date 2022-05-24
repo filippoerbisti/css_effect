@@ -8,7 +8,7 @@ View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
   <summary>Table of Contents</summary>
 
   <details open="open">
-  <summary>- [About](#about)</summary>
+  <summary>- [Menu](#menu)</summary>
   
     - [Built With](#built-with)
   </details>
@@ -26,6 +26,8 @@ View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
 
 </details>
 
+
+## MENU
 
 # [Animated Tab Bar Effects](https://github.com/filippoerbisti/css_effect/tree/animated-tab-bar)
 

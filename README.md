@@ -56,6 +56,7 @@
     - [Video Inside Text Animation Effects](#video-inside-text-animation-effects)
     - [Wooden Text Typography Effects](#wooden-text-typography-effects)
   - [Minigame](#minigame)
+    - [Memory Game CSS JS](#memory-game-css-js)
     - [Tower Block Game CSS JS](#tower-block-game-css-js)
     - [Hangman CSS Animation](#hangman-css-animation)
     - [Tic-Tac-Toe CSS](#tic-tac-toe-css)
@@ -213,6 +214,10 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEwowL) on Codepen.
 <br>
 
 ## [MINIGAME](https://codepen.io/collection/VYpoOM)
+
+### [Memory Game CSS JS](https://github.com/filippoerbisti/css_effect/tree/memory-game)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/WNMZzQp) on Codepen.
 
 ### [Tower Block Game CSS JS](https://github.com/filippoerbisti/css_effect/tree/tower-block-game)
 

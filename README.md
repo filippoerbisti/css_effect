@@ -61,6 +61,8 @@
     - [Memory Game CSS JS](#memory-game-css-js)
     - [Hangman CSS Animation](#hangman-css-animation)
     - [Tic-Tac-Toe CSS](#tic-tac-toe-css)
+  - [Widget](#widget)
+    - [Event Calendar Widget](#event-calendar-widget)
   - [LICENSE](#license)
 
 </details>
@@ -235,6 +237,16 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQvGqN) on Codepen.
 ### [Tic-Tac-Toe CSS](https://github.com/filippoerbisti/css_effect/tree/tic-tac-toe-css)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEeaGQ) on Codepen.
+
+
+---
+<br>
+
+## WIDGET
+
+### [Event Calendar Widget](https://github.com/filippoerbisti/css_effect/tree/event-calendar-widget)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/xxYXWJo) on Codepen.
 
 
 ---

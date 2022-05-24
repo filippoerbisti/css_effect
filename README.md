@@ -245,7 +245,7 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEeaGQ) on Codepen.
 
 ## WIDGET
 
-### [Analog Clock Widget Light/Dark](https://github.com/filippoerbisti/css_effect/tree/analog-clock-light-dark)
+### [Analog Clock Widget Light Dark](https://github.com/filippoerbisti/css_effect/tree/analog-clock-light-dark)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/OJQxZKr) on Codepen.
 

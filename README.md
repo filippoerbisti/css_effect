@@ -25,6 +25,7 @@
     - [Animated Tab Bar Effects](#animated-tab-bar-effects)
     - [Isometric Menu Hover Effect](#isometric-menu-hover-effect)
     - [3D Isometric Social Media Icon Hover](#3d-isometric-social-media-icon-hover)
+    - [Arrow Menu Indicator](#arrow-menu-indicator)
   - [Loader](#loader)
     - [3D Wavy Circle Loader Animation Effects](#3d-wavy-circle-loader-animation-effects)
     - [Snake Cube Loader Animation Effects](#snake-cube-loader-animation-effects)
@@ -73,6 +74,10 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/BaYRMrW) on Codepen.
 ### [3D Isometric Social Media Icon Hover](https://github.com/filippoerbisti/css_effect/tree/isometric-social-icon-hover)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.
+
+### [Arrow Menu Indicator](https://github.com/filippoerbisti/css_effect/tree/arrow-menu-indicator)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/KKQXqrB)) on Codepen.
 
 
 ---

@@ -62,6 +62,7 @@
     - [Hangman CSS Animation](#hangman-css-animation)
     - [Tic-Tac-Toe CSS](#tic-tac-toe-css)
   - [Widget](#widget)
+    - [Analog Clock Widget Light/Dark](#analog-clock-widget)
     - [Event Calendar Widget](#event-calendar-widget)
   - [LICENSE](#license)
 
@@ -243,6 +244,10 @@ View and try [DEMO](https://codepen.io/filippoerbisti/pen/oNEeaGQ) on Codepen.
 <br>
 
 ## WIDGET
+
+### [Analog Clock Widget Light/Dark](https://github.com/filippoerbisti/css_effect/tree/analog-clock-light-dark)
+
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/OJQxZKr) on Codepen.
 
 ### [Event Calendar Widget](https://github.com/filippoerbisti/css_effect/tree/event-calendar-widget)
 

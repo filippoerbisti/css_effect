@@ -7,11 +7,9 @@ View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
 <details open="open">
   <summary>Table of Contents</summary>
 
-  <details open="open">
-  <summary>- [Menu](#menu)</summary>
+  - [Menu](#menu)
   
     - [Built With](#built-with)
-  </details>
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Usage](#usage)

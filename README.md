@@ -1,3 +1,3 @@
-# Ping Pong Game JS
+# Event Calendar Widget
 
-View and try [DEMO](https://codepen.io/filippoerbisti/pen/ExQwEXG) on Codepen.
+View and try [DEMO](https://codepen.io/filippoerbisti/pen/xxYXWJo) on Codepen.

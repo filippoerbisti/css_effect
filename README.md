@@ -8,8 +8,9 @@ View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
   <summary>Table of Contents</summary>
 
   - [Menu](#menu)
-  
-    - [Built With](#built-with)
+    - [Animated Tab Bar Effects](#animated-tab-bar-effects)
+    - [Isometric Menu Hover Effect](#isometric-menu-hover-effect)
+    - [3D Isometric Social Media Icon Hover](#3d-isometric-social-media-icon-hover)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Usage](#usage)
@@ -30,6 +31,17 @@ View [DEMOS](https://codepen.io/filippoerbisti) on Codepen.
 # [Animated Tab Bar Effects](https://github.com/filippoerbisti/css_effect/tree/animated-tab-bar)
 
 View and try [DEMO](https://codepen.io/filippoerbisti/pen/qBxXMqR) on Codepen.
+
+# [Isometric Menu Hover Effect](https://github.com/filippoerbisti/css_effect/tree/isometric-menu-hover-effect)
+
+View [DEMO](https://codepen.io/filippoerbisti/pen/BaYRMrW) on Codepen.
+
+# [3D Isometric Social Media Icon Hover](https://github.com/filippoerbisti/css_effect/tree/isometric-social-icon-hover)
+
+View [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.
+
+
+
 
 # [Hex Circle Follow on Mouse](https://github.com/filippoerbisti/css_effect/tree/hex-circle-follow-mouse)
 
@@ -69,13 +81,6 @@ View [DEMO](https://codepen.io/filippoerbisti/pen/MWQoJaZ) on Codepen.
 
 View [DEMO](https://codepen.io/filippoerbisti/pen/poawPqL) on Codepen.
 
-# [Isometric Menu Hover Effect](https://github.com/filippoerbisti/css_effect/tree/isometric-menu-hover-effect)
-
-View [DEMO](https://codepen.io/filippoerbisti/pen/BaYRMrW) on Codepen.
-
-# [3D Isometric Social Media Icon Hover](https://github.com/filippoerbisti/css_effect/tree/isometric-social-icon-hover)
-
-View [DEMO](https://codepen.io/filippoerbisti/pen/RwQgZPy) on Codepen.
 
 # [Water Wave Text Animation Effects](https://github.com/filippoerbisti/css_effect/tree/water-wave-text-animation)
 
